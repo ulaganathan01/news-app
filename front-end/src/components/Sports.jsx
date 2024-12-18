@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 function Sports() {
   const [responseData, setResponseData] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:8080/sports")
+    fetch("https://news-app-5eug.onrender.com/sports")
       .then((res) => res.json())
       .then((res) => {
         console.log(res);

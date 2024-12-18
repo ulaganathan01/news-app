@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 function Business() {
   const [responseData, setResponseData] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:8080/business")
+    fetch("https://news-app-5eug.onrender.com/business")
       .then((res) => res.json())
       .then((res) => {
         console.log(res);

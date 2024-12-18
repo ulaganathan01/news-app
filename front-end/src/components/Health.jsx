@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 function Health() {
   const [responseData, setResponseData] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:8080/health")
+    fetch("https://news-app-5eug.onrender.com/health")
       .then((res) => res.json())
       .then((res) => {
         console.log(res);

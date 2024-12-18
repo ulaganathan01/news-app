@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 function Politics() {
   const [responseData, setResponseData] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:8080/politics")
+    fetch("https://news-app-5eug.onrender.com/politics")
       .then((res) => res.json())
       .then((res) => {
         console.log(res);
